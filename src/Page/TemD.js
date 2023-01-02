@@ -5,7 +5,7 @@ import Editor from "../comp/Editor";
 import { useEffect } from "react";
 import { useState } from "react";
 import jsPDF from "jspdf";
-import {ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 export default function TemD() {
   // get data from localstorage and save in states
@@ -171,24 +171,25 @@ export default function TemD() {
                 </section>
               </div>
             </div>
-          </div>
-
-          <div className="modal-action flex justify-start relative  m-3">
+            <div className="modal-action flex justify-start relative  m-3">
             {/* button which back to edit  */}
             <label
               htmlFor="my-modal-5"
-              className="btn btn-primary fixed capitalize fixed left-[990px] top-[500px] "
+              className=" btn   btn-primary sm:fixed capitalize sm:fixed sm:left-[850px] sm:top-[50px]   "
             >
               Back To Edit
             </label>
             {/* btn which download the pdf calling generatepdf function */}
             <label
               onClick={genratePdf}
-              className="btn btn-md bg-[#FDE707] hover:bg-[#FDE707] text-black fixed left-[830px] top-[500px]  hover:text-black capitalize font-sans"
+              className="btn btn   btn-md bg-[#FDE707] hover:bg-[#FDE707] text-black sm:fixed sm:left-[670px] sm:top-[50px]  hover:text-black capitalize font-sans"
             >
               Download Pdf
             </label>
           </div>
+          </div>
+
+    
 
         </div>
       </section>
