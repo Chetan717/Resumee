@@ -68,19 +68,19 @@ export default function TemB() {
                          
                       </h2>
                       <h2 class="text-gray-900 text-xs title-font font-medium mb-">
-                        {/* {getval.jobtitle} */}
+                        {getval.jobtitle}
                       </h2>
                       <p class=" w-[450px] text-gary-500 text-xs inline-flex mb-">
-                        {/* {getval.citya} */}
+                        {getval.citya}
                       </p>
                       <p class=" w-[450px] text-gary-500 text-xs inline-flex mb-1">
-                        {/* {getval.mobile} */}
+                        {getval.mobile}
                       </p>
                       <p class=" w-[450px] text-gary-500 text-xs inline-flex  mb-1">
-                        {/* {getval.email} */}
+                        {getval.email}
                       </p>
                       <p class=" w-[450px] text-gray-500 text-xs mb-">
-                        {/* {getval.psummary} */}
+                        {getval.psummary}
                       </p>
                       <p class="mt- text-blue-800 inline-flex items-center">
                         LinkedIn
@@ -92,22 +92,22 @@ export default function TemB() {
                         Work Experiance
                       </h2>
                       <h2 class="text-gray-900 text-xs title-font font-medium mb-1">
-                        {/* {getval.employer} */}
+                        {getval.employer}
                       </h2>
 
                       <p class=" w-[450px] text-gray-500 text-xs">
-                        {/* {getval.descriptionex} */}
+                        {getval.descriptionex}
                       </p>
                       <div class="mt- text-[10px] text-blue-800 inline-flex ">
                         <p>
-                          {/* {getval.startdateex} */}
+                          {getval.startdateex}
                           {" -"}
                         </p>
 
-                        {/* <p> {getval.enddateex}</p> */}
+                        <p> {getval.enddateex}</p>
                       </div>
                       <p class=" w-[450px] text-gray-500 text-xs">
-                        {/* {getval.company} */}
+                        {getval.company}
                       </p>
                     </div>
                     <div class="flex-grow pl-6 px-1 py-3">
@@ -115,19 +115,19 @@ export default function TemB() {
                         Education & Courses{" "}
                       </h2>
                       <h2 class="text-gray-900 text-xs title-font font-medium mb-1 w-[300px]">
-                        {/* {getval.school}-{getval.degree}-{getval.city} */}
+                        {getval.school}-{getval.degree}-{getval.city}
                       </h2>
 
                       <p class=" w-[450px] text-blue-500 text-xs">
-                        {/* {getval.course} */}
+                        {getval.course}
                       </p>
                       <div class="mt- text-[10px] text-blue-800 inline-flex ">
                         <p>
-                          {/* {getval.started} */}
+                          {getval.started}
                           {" -"}
                         </p>
-{/* 
-                        <p> {getval.ended}</p> */}
+
+                       <p> {getval.ended}</p> 
                       </div>
                     </div>
                     <div class="flex flex-col pl-6 px-1 py-3">
@@ -155,10 +155,10 @@ export default function TemB() {
                       <div class="mt- text-[12px] text-blue-800 flex-col w-[400px] ">
                         <p>
                           {" "}
-                          {/* {getval.project} {" -"} */}
+                          {getval.project} {" -"}
                         </p>
 
-                        {/* <p>{getval.link}</p> */}
+                        <p>{getval.link}</p>
                       </div>
                     </div>
                   </div>

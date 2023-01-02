@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { MultiSelect } from "react-multi-select-component";
 import {ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -17,34 +17,48 @@ const options = [
 
 function Editor() {
   // state of multiple skill select in form
-  const [selected, setSelected] = useState([]);
+  const [selected, setSelected] = useState([""]);
 
   // object state of all inputs in form
   const [resData, setResData] = useState({
-    title: "",
-    fname: "",
-    lname: "",
-    citya: "",
-    email: "",
-    mobile: "",
-    psummary: "",
-    jobtitle: "",
-    employer: "",
-    startdateex: "",
-    enddateex: "",
-    company: "",
-    workex: "",
-    descriptionex: "",
-    school: "",
-    degree: "",
-    started: "",
-    ended: "",
-    city: "",
-    course: "",
-    skills: "",
-    project: "",
-    link: "",
+    title: "job title",
+      fname: "john",
+      lname: "dey",
+      citya: "city",
+      email: "email@.com",
+      mobile: "+9177634764",
+      psummary: "the summary of your job profile",
+      jobtitle: "devloper",
+      employer: "job role",
+      startdateex: "2020",
+      enddateex: "2022",
+      company: "past company",
+      workex: "",
+      descriptionex: " experiance of past company explian detal",
+      school: "collage name",
+      degree: "Degree",
+      started: "2022",
+      ended: "2023",
+      city: "city",
+      course: "full stack devloper",
+      skills: "",
+      project: "resume",
+      link: "https://vercel.com/chetan717/resumee",
+      
+   
   });
+
+  useEffect(()=>{
+senddemodata();
+  })
+
+const senddemodata = () =>{
+
+  localStorage.setItem("ResData", JSON.stringify(resData));
+  localStorage.setItem("ResSkill", JSON.stringify(selected));
+
+}
+
 
   const [mainRes, setMainRes] = useState([]);
 
@@ -156,29 +170,30 @@ notifyerr()
   // clear all the filed when click on create New
   const clearAll = () => {
     setResData({
-      title: "",
-      fname: "",
-      lname: "",
-      citya: "",
-      email: "",
-      mobile: "",
-      psummary: "",
-      jobtitle: "",
-      employer: "",
-      startdateex: "",
-      enddateex: "",
-      company: "",
+      title: "john doe",
+      fname: "sadasd",
+      lname: "sdsds",
+      citya: "fdfsdf",
+      email: "email@717.com",
+      mobile: "635436",
+      psummary: " The href attribute is required for an anchor to be keyboard accessible. Prov",
+      jobtitle: "devloper",
+      employer: "no",
+      startdateex: "2020",
+      enddateex: "2022",
+      company: "nostar",
       workex: "",
-      descriptionex: "",
-      school: "",
-      degree: "",
-      started: "",
-      ended: "",
-      city: "",
-      course: "",
+      descriptionex: " use a button and change it with appropriate styles. Learn more: https://github.com/jsx",
+      school: "school tilak ",
+      degree: "mba",
+      started: "2022",
+      ended: "2023",
+      city: "pune",
+      course: "devloper",
       skills: "",
-      project: "",
-      link: "",
+      project: "resume",
+      link: "https://vercel.com/chetan717/resumee",
+
     });
     notifyerr()
   };
