@@ -24,7 +24,7 @@ export default function TemB() {
    // states for store localstorage items
   const [getval, setGetval] = useState([]);
   const [valskill, setValskill] = useState([]);
-
+  const [pdfname,setPdfname] = useState("res");
   console.log(getval, valskill);
 
   //  pdf generating function using jsPdf package
@@ -32,7 +32,7 @@ export default function TemB() {
     const doc = new jsPDF("p", "pt", "a4");
     doc.html(document.querySelector("#resumepage"), {
       callback: function (pdf) {
-        pdf.save("Resume.pdf");
+        pdf.save(pdfname);
         toast.success(" Pdf are Downloaded !");
       },
     });
@@ -181,6 +181,18 @@ export default function TemB() {
               Download Pdf
             </label>
           </div>
+
+          <div className="flex flex-col py-20 px-9">
+<p className="p-1 font-bold">Name of Your Resume</p>
+<input className="w-full rounded-sm " onChange={(e)=>setPdfname(e.target.value)} placeholder="pdf name..." type="text"/>
+<button
+             
+              className=" btn btn-sm  btn-primary sm:fixed capitalize sm:fixed sm:left-[680px] sm:top-[210px]"
+            >
+              Save Name
+            </button>
+</div>
+
           </div>
 
       
