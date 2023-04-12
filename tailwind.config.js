@@ -6,7 +6,7 @@ module.exports = {
   },
   plugins: [],
   
-  plugins: [
-    require('flowbite/plugin')
-]
+//   plugins: [
+//     require('flowbite/plugin')
+// ]
 }

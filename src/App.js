@@ -1,11 +1,11 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import TemplateA from './Page/TamplateA'
+
 
 import Home from './Page/Home'
-import TemB from './Page/TemB'
-import TemC from './Page/TemC'
-import TemD from './Page/TemD'
+
+import Editor2 from './Page/Editor2'
+
 
 
 export default function App() {
@@ -14,14 +14,9 @@ export default function App() {
     <BrowserRouter>
     
     <Routes>
-
-      <Route path="/" element={<Home/>}></Route>
-      <Route path='/Page/TemplateA' element={<TemplateA/>}></Route>
-      <Route path='/Page/TemB' element={<TemB/>}></Route>
-      <Route path='/Page/TemC' element={<TemC/>}></Route>
-      <Route path='/Page/TemD' element={<TemD/>}></Route>
-      
-    </Routes>
+     <Route path="/" element={<Home/>}></Route>
+      <Route path='/Editor/:id' element={<Editor2/>}></Route>
+     </Routes>
     </BrowserRouter>
     </>
   )

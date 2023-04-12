@@ -11,8 +11,8 @@ export default function Hero() {
     <h1 class= "font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-blue-600">Resume with Beautiful ready-to-use resume templates !</h1>
     
     <p className="py-4 text-[15px] font-medium">Use professional field-tested resume templates  follow the exact ‘resume rules’ employers look for. Easy to use and done within minutes - try now for free!</p>
-     <img className='relative bottom-[105px h-300px] w-full ' src={img}></img>
-    
+     {/* <img className='relative bottom-[105px h-300px] w-full ' src={img}></img>
+     */}
  
     </div>
   </div>
